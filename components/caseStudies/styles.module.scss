@@ -1,0 +1,206 @@
+.caseStudies {
+  width: var(--full);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  .wrapper {
+    width: var(--full);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 0px;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    .paraLead {
+      color: var(--orange);
+      font-family: Noto-Medium;
+      font-size: 15px;
+    }
+
+    h1 {
+      margin: 12px 0px 24px;
+      max-width: 772px;
+      font-family: Noto-Bold;
+      font-size: 40px;
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+
+    > p:not(.paraLead) {
+      max-width: 713px;
+      font-family: Noto-Light;
+      font-size: 20px;
+    }
+  }
+
+  .content {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .contentWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 96px 0px;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+      }
+
+      .filterGrid {
+        width: var(--full);
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        input,
+        select {
+          background: var(--secondary-dark);
+          border: 1px solid var(--secondary-ghost);
+
+          &:focus {
+            border: 1px solid var(--orange);
+          }
+        }
+
+        .searchBox {
+          width: 40%;
+          max-width: 413px;
+          margin-right: 20px;
+
+          @media (max-width: 600px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            width: var(--full);
+            max-width: 300px;
+          }
+        }
+
+        .filterBox {
+          width: 30%;
+          max-width: 197px;
+          margin-right: 20px;
+
+          @media (max-width: 600px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            width: var(--full);
+            max-width: 300px;
+          }
+        }
+
+        .yearBox {
+          width: 20%;
+          max-width: 128px;
+
+          @media (max-width: 600px) {
+            width: var(--full);
+            max-width: 300px;
+          }
+        }
+      }
+
+      .studyGrid {
+        margin: 80px 0;
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1200px) {
+          grid-template-columns: repeat(2, 1fr);
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media (max-width: 903px) {
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 350px;
+        }
+      }
+    }
+  }
+
+  .recent {
+    width: var(--full);
+
+    .recentWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 140px 0px;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+      }
+
+      .recentHeader {
+        width: var(--full);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+          font-size: 32px;
+          font-family: Noto-Bold;
+          margin-bottom: 24px;
+        }
+
+        > p {
+          font-family: Noto-Light;
+          font-size: 20px;
+          max-width: 846px;
+
+          @media (max-width: 600px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .insightGrid {
+        width: var(--full);
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1200px) {
+          grid-template-columns: repeat(2, 1fr);
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media (max-width: 903px) {
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}

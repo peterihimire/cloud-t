@@ -1,0 +1,143 @@
+.onboardingVideo {
+  width: 100%;
+  max-width: 630px;
+  margin: -270px auto 0;
+
+  .video {
+    width: 100%;
+    position: relative;
+    height: 369px;
+  }
+}
+
+.content {
+  margin-top: 60px;
+  width: 100%;
+
+  h2 {
+    color: var(--white);
+    font-family: Noto-Bold;
+    margin-bottom: 16px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  > p {
+    font-size: 17px;
+    color: #f5f5ff;
+    font-family: Noto-Light;
+    text-align: center;
+  }
+
+  .contentWrap {
+    margin-top: 84px;
+    width: 100%;
+
+    .grid {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 57px;
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gridLeft {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 48px;
+          text-align: center;
+        }
+
+        .gridImg {
+          width: 88px;
+          height: 88px;
+          flex-shrink: 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .gridText {
+          width: fit-content;
+          margin-left: 29px;
+
+          @media screen and (max-width: 700px) {
+            margin-left: 0px;
+            margin-top: 29px;
+          }
+
+          h3 {
+            font-family: Noto-Medium;
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #f5f5ff;
+          }
+
+          > p {
+            color: rgba(244, 244, 244, 0.8);
+            font-size: 12px;
+            max-width: 399px;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .gridRight {
+        width: fit-content;
+
+        > a {
+          width: 134px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-family: Noto-Medium;
+          color: var(--white);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .contentOutro {
+    width: 100%;
+    text-align: center;
+    margin-top: 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 32px;
+      font-size: 32px;
+      color: var(--white);
+      font-family: Noto-Bold;
+    }
+
+    a {
+      height: 48px;
+      width: 197px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-family: Noto-Medium;
+      color: var(--white);
+      border-radius: 4px;
+    }
+  }
+}

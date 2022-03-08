@@ -1,0 +1,27 @@
+.continueLearning {
+  width: 100%;
+  margin-top: 80px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    // @media screen and (max-width: 903px) {
+    //   padding: 0 16px;
+    // }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      color: var(--text-primary);
+      margin-bottom: 40px;
+    }
+
+    .slideWrapper {
+      @media (max-width: 499px) {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

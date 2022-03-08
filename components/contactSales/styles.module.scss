@@ -1,0 +1,137 @@
+.contactSales {
+  width: var(--full);
+  padding: 140px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  @media (max-width: 903px) {
+    padding: 72px 0px;
+  }
+
+  .lead {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+
+    .leadText {
+      color: var(--orange);
+      font-size: 15px;
+      font-family: Noto-Medium;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: Noto-Bold;
+      max-width: 686px;
+      text-align: center;
+      margin: 12px 0px 24px;
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+
+    .leadPara {
+      font-size: 20px;
+      font-family: Noto-Light;
+      max-width: 713px;
+      text-align: center;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+
+    .map {
+      width: 85%;
+      margin: 100px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > svg {
+        width: var(--full);
+        height: var(--full);
+      }
+
+      @media (max-width: 903px) {
+        width: var(--full);
+        margin: 32px auto;
+      }
+
+      .mapOverlay {
+        width: var(--full);
+        display: flex;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+
+        .mapText {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          padding: 12px;
+          border-right: 1px solid var(--text-primary);
+          white-space: nowrap;
+
+          @media (max-width: 600px) {
+            border-right: 0;
+            border-bottom: 1px solid var(--text-primary);
+
+            &:last-of-type {
+              border-bottom: 0;
+            }
+          }
+
+          &:last-of-type {
+            border-right: 0;
+          }
+
+          > span {
+            color: var(--text-primary);
+
+            &:first-of-type {
+              font-size: 17px;
+              font-family: Noto-Bold;
+              margin-bottom: 12px;
+            }
+
+            &:last-of-type {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .helpSection {
+    width: var(--full);
+    background: var(--secondary-dark);
+    padding: 96px 16px;
+  }
+
+  .faqs {
+    width: var(--full);
+    padding: 140px 16px 0px;
+  }
+}

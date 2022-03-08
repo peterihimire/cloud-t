@@ -1,0 +1,498 @@
+.caseStudy {
+  width: var(--full);
+
+  .hero {
+    width: var(--full);
+    background: url("../../public/images/Rectangle\ 1.png") no-repeat;
+    background-size: cover;
+
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 94px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+        flex-direction: column;
+      }
+
+      .left {
+        width: 40%;
+        // max-width: 563px;
+
+        @media (max-width: 903px) {
+          width: var(--full);
+          max-width: 563px;
+        }
+
+        img {
+          width: var(--full);
+          height: var(--full);
+        }
+      }
+
+      .right {
+        width: 55%;
+
+        @media (max-width: 903px) {
+          width: var(--full);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 32px;
+        }
+
+        h1 {
+          font-size: 56px;
+          font-family: Noto-Bold;
+          margin-bottom: 16px;
+
+          @media (max-width: 600px) {
+            font-size: 34px;
+          }
+        }
+
+        > p {
+          max-width: 630px;
+          font-family: Noto-Light;
+          font-size: 17px;
+          //   text-shadow: var(--text-shadow);
+        }
+
+        .heroInfo {
+          width: var(--full);
+          display: flex;
+          margin-top: 32px;
+
+          @media (max-width: 903px) {
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+          }
+
+          @media (max-width: 400px) {
+            flex-direction: column;
+          }
+
+          .heroInfoDetails {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin-right: 40px;
+
+            @media (max-width: 400px) {
+              margin-right: 0;
+              margin-bottom: 16px;
+
+              &:last-of-type {
+                margin-bottom: 0px;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0px;
+
+              > span {
+                &:last-of-type {
+                  color: var(--orange);
+
+                //   @media (max-width: 903px) {
+                //     text-shadow: var(--text-shadow);
+                //   }
+                }
+              }
+            }
+
+            > span {
+              font-size: 14px;
+
+              &:last-of-type {
+                font-family: Noto-SemiBold;
+                margin-top: 12px;
+              }
+            }
+          }
+        }
+
+        .heroLink {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+
+  .objective {
+    width: var(--full);
+
+    .objectiveWrapper {
+      width: 80%;
+      padding: 140px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        padding: 72px 16px;
+      }
+
+      @media (max-width: 600px) {
+        width: var(--full);
+      }
+
+      .objLead {
+        color: var(--orange);
+        font-size: 15px;
+        font-family: Noto-Medium;
+      }
+
+      > h2 {
+        font-family: Noto-Bold;
+        font-size: 40px;
+        max-width: 850px;
+        margin: 12px 0px 24px;
+
+        @media (max-width: 600px) {
+          font-size: 32px;
+        }
+      }
+
+      > p:not(.objLead) {
+        max-width: 846px;
+        font-family: Noto-Light;
+        font-size: 17px;
+      }
+
+      .objGrid {
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(3, 310px);
+        gap: 20px;
+        margin-top: 48px;
+        justify-content: center;
+
+        @media (max-width: 1200px) {
+          display: block;
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .objCard {
+          display: flex;
+          align-items: center;
+          text-align: left;
+
+          @media (max-width: 1200px) {
+            margin-bottom: 20px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+          .objCardLeft {
+            border-radius: var(--radius);
+            background: var(--secondary-dark);
+            width: 88px;
+            height: 88px;
+            flex-shrink: 0;
+            font-size: 23px;
+            color: var(--orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .objCardRight {
+            margin-left: 20px;
+
+            p {
+              font-size: 14px;
+              max-width: 197px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pbs {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .pbsWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 46px 0px;
+
+      @media (max-width: 903px) {
+        padding: 46px 16px 120px;
+      }
+
+      @media (max-width: 600px) {
+        width: var(--full);
+      }
+
+      .problem {
+        width: var(--full);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 72px;
+
+        @media (max-width: 903px) {
+          flex-direction: column;
+        }
+
+        .problemLeft {
+          width: 40%;
+
+          @media (max-width: 903px) {
+            width: var(--full);
+            max-width: 400px;
+            margin-bottom: 64px;
+          }
+
+          img {
+            width: var(--full);
+            height: var(--full);
+            // object-fit: contain;
+          }
+        }
+
+        .problemRight {
+          width: 50%;
+
+          @media (max-width: 903px) {
+            width: var(--full);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .problemLead {
+            font-size: 15px;
+            font-family: Noto-Medium;
+            color: var(--orange);
+          }
+
+          h2 {
+            font-size: 32px;
+            font-family: Noto-Bold;
+            margin: 12px 0px 24px;
+          }
+
+          > p:not(.problemLead) {
+            max-width: 630px;
+            font-size: 17px;
+            font-family: Noto-Light;
+          }
+        }
+      }
+
+      .solution {
+        width: var(--full);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 903px) {
+          flex-direction: column-reverse;
+        }
+
+        .solutionRight {
+          width: 40%;
+
+          @media (max-width: 903px) {
+            width: var(--full);
+            max-width: 400px;
+            margin-bottom: 64px;
+          }
+
+          img {
+            width: var(--full);
+            height: var(--full);
+            // object-fit: contain;
+          }
+        }
+
+        .solutionLeft {
+          width: 50%;
+
+          @media (max-width: 903px) {
+            width: var(--full);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .solutionLead {
+            font-size: 15px;
+            font-family: Noto-Medium;
+            color: var(--orange);
+          }
+
+          h2 {
+            font-size: 32px;
+            font-family: Noto-Bold;
+            margin: 12px 0px 24px;
+          }
+
+          > p:not(.solutionLead) {
+            max-width: 630px;
+            font-size: 17px;
+            font-family: Noto-Light;
+          }
+        }
+      }
+    }
+  }
+
+  .result {
+    width: var(--full);
+
+    .resultWrapper {
+      width: 80%;
+      padding: 140px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        padding: 72px 16px;
+      }
+
+      @media (max-width: 600px) {
+        width: var(--full);
+      }
+
+      .resultLead {
+        color: var(--orange);
+        font-size: 15px;
+        font-family: Noto-Medium;
+      }
+
+      h2 {
+        font-family: Noto-Bold;
+        font-size: 40px;
+        max-width: 637px;
+        margin: 12px 0px 24px;
+
+        @media (max-width: 600px) {
+          font-size: 32px;
+        }
+      }
+
+      > p:not(.resultLead) {
+        max-width: 846px;
+        font-family: Noto-Light;
+        font-size: 17px;
+      }
+
+      .resultGrid {
+        margin-top: 100px;
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(3, 341.33px);
+        gap: 20px;
+        justify-content: center;
+
+        @media (max-width: 1200px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 300px;
+        }
+
+        .resultImg {
+          img {
+            width: var(--full);
+            height: var(--full);
+          }
+        }
+      }
+    }
+  }
+
+  .client {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .clientWrapper {
+      width: var(--full);
+      padding: 96px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (max-width: 903px) {
+        padding: 72px 16px;
+      }
+
+      .clientLead {
+        font-size: 15px;
+        font-family: Noto-Medium;
+        margin-bottom: 40px;
+        color: var(--orange);
+      }
+
+      .clientReview {
+        text-align: center;
+        max-width: 670px;
+        font-size: 24px;
+        line-height: 40px;
+
+        @media (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .related {
+    width: var(--full);
+
+    .relatedWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 140px 0px;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+        margin-bottom: 48px;
+      }
+
+      .relatedGrid {
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: left;
+
+        @media (max-width: 903px) {
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 350px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

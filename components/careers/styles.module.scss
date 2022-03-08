@@ -1,0 +1,104 @@
+.careers {
+  width: var(--full);
+  padding: 140px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  @media (max-width: 600px) {
+    padding: 72px 0;
+  }
+
+  .hero {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: var(--full);
+      height: 500px;
+      background: url("../../public/images/Team\ Smiling\ 20\ 1.png") no-repeat
+        top;
+      background-size: cover;
+      margin-top: 77px;
+    }
+
+    > p {
+      color: var(--orange);
+      font-size: 15px;
+      font-family: Noto-Medium;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: Noto-Bold;
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 850px;
+
+      @media (max-width: 1200px) {
+        max-width: 700px;
+        padding: 0 32px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .outro {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 16px 0;
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: Noto-Light;
+      margin: 24px 0;
+      max-width: 846px;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+
+    .outroForm {
+      width: var(--full);
+      max-width: 414px;
+
+      .submitBtn {
+        width: var(--full);
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+      }
+    }
+  }
+}

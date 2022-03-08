@@ -1,0 +1,262 @@
+.individuals {
+  width: var(--full);
+
+  .hero {
+    width: var(--full);
+    padding: 173px 0px;
+    background: linear-gradient(
+        86.05deg,
+        #181818 3.56%,
+        rgba(24, 24, 24, 0) 97.14%
+      ),
+      url("/images/individualsHero.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+      background-position: center;
+    }
+
+    .heroWrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: var(--full);
+      }
+
+      h1 {
+        max-width: 638px;
+        font-size: 56px;
+        font-family: Noto-Bold;
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      p {
+        max-width: 630px;
+        margin: 24px 0px 32px;
+        font-size: 20px;
+        font-family: Noto-Light;
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+
+  .popVids {
+    width: var(--full);
+    padding-bottom: 93px;
+    background-color: var(--secondary-dark);
+  }
+
+  .secondSection {
+    padding-bottom: 100px;
+
+    .compsWrapper {
+      @media (max-width: 1200px) {
+        margin-bottom: -70px;
+      }
+    }
+  }
+
+  .overview {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .overviewWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 104px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+      }
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      .overviewLeft {
+        width: 55%;
+
+        @media (max-width: 1200px) {
+          width: var(--full);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 48px;
+          text-align: center;
+        }
+
+        .overLead {
+          color: var(--orange);
+          font-family: Noto-Medium;
+          font-size: 15px;
+        }
+
+        h2 {
+          max-width: 542px;
+          font-size: 32px;
+          font-family: Noto-Bold;
+          margin: 12px 0px 24px;
+        }
+
+        > p:not(.overLead) {
+          max-width: 626px;
+          font-family: Noto-Light;
+          font-size: 17px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .overviewRight {
+        width: 40%;
+
+        @media (max-width: 1200px) {
+          width: var(--full);
+          max-width: 700px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .overVideo {
+          width: var(--full);
+          //   max-width: var(--full);
+          height: 444px;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .learningPath {
+    width: var(--full);
+
+    .pathWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 104px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 903px) {
+        padding: 72px 0px;
+      }
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      .pathLeft {
+        width: 35%;
+        flex-shrink: 0;
+
+        @media (max-width: 1200px) {
+          width: 90%;
+          max-width: 542px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 32px;
+        }
+
+        img {
+          width: var(--full);
+          height: var(--full);
+        }
+      }
+
+      .pathRight {
+        width: 50%;
+
+        @media (max-width: 1200px) {
+          width: var(--full);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .pathLead {
+          color: var(--orange);
+          font-family: Noto-Medium;
+          font-size: 15px;
+        }
+
+        h2 {
+          max-width: 574px;
+          font-size: 32px;
+          font-family: Noto-Bold;
+          margin: 12px 0px 24px;
+        }
+
+        > p:not(.pathLead) {
+          max-width: 630px;
+          font-family: Noto-Light;
+          font-size: 17px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .pricingSection {
+    width: var(--full);
+    padding-top: 96px;
+    background: var(--secondary-dark);
+
+    .pricingsLead {
+      width: var(--full);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 16px;
+
+      > p {
+        font-size: 15px;
+        color: var(--orange);
+        font-family: Noto-Medium;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-family: Noto-Bold;
+        text-align: center;
+
+        @media (max-width: 903px) {
+          max-width: 468px;
+        }
+      }
+    }
+
+    .pricings {
+      background: transparent;
+
+      .priceCard {
+        background: transparent;
+
+        &:hover {
+          background: var(--main-bg);
+        }
+
+        @media (max-width: 1200px) {
+          background: var(--main-bg);
+        }
+      }
+    }
+  }
+}

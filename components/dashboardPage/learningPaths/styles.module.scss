@@ -1,0 +1,69 @@
+.learningPaths {
+  width: 100%;
+  margin-top: 64px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    // @media screen and (max-width: 903px) {
+    //   padding: 0 16px;
+    // }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      color: var(--text-primary);
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      width: 100%;
+
+      .slideWrapper {
+        align-items: center;
+
+        > * {
+          > * {
+            width: 100% !important;
+            max-width: 159px;
+          }
+        }
+      }
+
+      .courseCard {
+        width: 159px;
+        height: 164px;
+        border-radius: 8px;
+        background: var(--secondary-dark);
+        padding: 38px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-primary);
+        font-size: 15px;
+        font-family: Noto-SemiBold;
+        flex-shrink: 0;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        > div {
+          width: 100%;
+          margin-bottom: 13px;
+
+          img {
+            margin: 0 auto;
+          }
+        }
+
+        > p {
+          margin-top: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

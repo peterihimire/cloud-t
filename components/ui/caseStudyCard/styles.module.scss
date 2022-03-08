@@ -1,0 +1,58 @@
+.caseStudyCard {
+  height: auto;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+
+  .cardImg {
+    width: var(--full);
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: var(--full);
+      max-width: 269px;
+    }
+  }
+
+  .cardBody {
+    width: var(--full);
+    padding: 12px;
+
+    .cardTitle {
+      width: var(--full);
+
+      h3 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+      }
+    }
+
+    .cardDesc {
+      width: var(--full);
+      margin-top: 8px;
+
+      p {
+        max-width: 389px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cardFooter {
+    width: var(--full);
+    padding: 0px 12px 12px;
+    margin-top: auto;
+
+    p {
+      color: var(--orange);
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 4rem 0;
+
+  .flex {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  .flexButton {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  .gridMargin {
+    margin-top: 4em;
+    @media (max-width: 768px) {
+      margin-top: 2em;
+    }
+  }
+}

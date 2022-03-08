@@ -1,0 +1,42 @@
+.roleBase {
+  width: 100%;
+  margin-top: 64px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    // @media screen and (max-width: 903px) {
+    //   padding: 0 16px;
+    // }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      color: var(--text-primary);
+      margin-bottom: 40px;
+
+      a {
+        font-family: Noto-Light;
+        font-size: 17px;
+        text-decoration: underline;
+        color: rgba(244, 244, 244, 0.8);
+      }
+    }
+
+    .carousel {
+      width: 100%;
+      //   height: 300px;
+
+      .slideWrapper {
+        align-items: center;
+        //   max-height: 320px;
+        
+        @media (max-width: 499px) {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.rateStars {
+  display: flex;
+  font-size: 13px;
+
+  > i {
+    margin-right: 6px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.gold {
+      color: var(--gold);
+    }
+  }
+}

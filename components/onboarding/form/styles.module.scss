@@ -1,0 +1,62 @@
+.stepperForm {
+  width: var(--full);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 28px;
+    font-family: Noto-Bold;
+  }
+
+  p {
+    font-family: Noto-Light;
+    max-width: 425px;
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+
+  .form {
+    width: var(--full);
+    max-width: 425px;
+   
+
+    @media screen and (max-width: 450px) {
+      max-width: 330px;
+    }
+
+    .formGroup {
+      margin-bottom: 32px;
+
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      label {
+        font-size: 17px;
+        margin-bottom: 16px;
+        font-family: Noto-Light;
+        color: var(--white);
+      }
+
+      input {
+        background: #191919;
+        border: 0;
+      }
+    }
+   
+    .formBtn {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      @media screen and (max-width: 600px) {
+        max-width: var(--full);
+      }
+    }
+  }
+}

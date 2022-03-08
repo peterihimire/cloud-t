@@ -1,0 +1,277 @@
+.content {
+  width: 90%;
+  margin: 0 auto;
+
+  .contentIntro {
+    width: var(--full);
+    margin-bottom: 81px;
+
+    @media (max-width: 1275px) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    p {
+      font-size: 17px;
+      font-family: Noto-Light;
+      max-width: 630px;
+    }
+  }
+
+  .learn {
+    margin-top: 161px;
+    width: var(--full);
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > h3 {
+        text-align: center;
+      }
+    }
+
+    > h3 {
+      font-size: 28px;
+      font-family: Noto-Bold;
+      margin-bottom: 48px;
+    }
+
+    .learnGrid {
+      width: var(--full);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 350px;
+      }
+
+      .learnInfo {
+        display: flex;
+        align-items: center;
+
+        .learnCheck {
+          border-radius: var(--radius);
+          background: var(--main-bg);
+          width: 88px;
+          height: 88px;
+          flex-shrink: 0;
+          font-size: 23px;
+          color: var(--orange);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .learnContext {
+          margin-left: 20px;
+
+          p {
+            font-size: 14px;
+            max-width: 197px;
+          }
+        }
+      }
+    }
+  }
+
+  .requirements {
+    margin-top: 97px;
+    width: var(--full);
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    > h3 {
+      font-size: 28px;
+      font-family: Noto-Bold;
+      margin-bottom: 48px;
+    }
+
+    .reqGrid {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: var(--full);
+        max-width: 350px;
+      }
+
+      .reqInfo {
+        display: flex;
+        align-items: center;
+
+        .reqCheck {
+          border-radius: var(--radius);
+          background: var(--main-bg);
+          width: 88px;
+          height: 88px;
+          flex-shrink: 0;
+          font-size: 23px;
+          color: var(--orange);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .reqContext {
+          margin-left: 20px;
+
+          p {
+            font-size: 14px;
+            max-width: 197px;
+          }
+        }
+      }
+    }
+  }
+
+  .coursesSection {
+    width: var(--full);
+    margin-top: 96px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    > h3 {
+      font-size: 28px;
+      font-family: Noto-Bold;
+      margin-bottom: 48px;
+    }
+
+    > a {
+      margin-top: 51px;
+      justify-content: space-evenly;
+    }
+
+    .coursesList {
+      width: var(--full);
+      // display: flex;
+      // flex-wrap: nowrap;
+      // overflow-x: auto;
+
+      // > * {
+      //   margin-right: 20px;
+      //   flex-shrink: 0;
+      //   max-width: 280px;
+
+      //   &:last-of-type {
+      //     margin-right: 0;
+      //   }
+      // }
+
+      .slideWrapper {
+        align-items: center;
+        // max-height: 290px;
+
+        > * {
+          > * {
+            width: 100% !important;
+            max-width: 280px;
+          }
+        }
+      }
+    }
+  }
+
+  .certSection {
+    width: var(--full);
+    margin-top: 96px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    > h3 {
+      font-size: 28px;
+      font-family: Noto-Bold;
+      margin-bottom: 48px;
+    }
+
+    .certList {
+      display: grid;
+      width: var(--full);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      text-align: left;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 700px;
+
+        // > * {
+        //   margin: 0 auto;
+        // }
+      }
+    }
+  }
+
+  .instSection {
+    width: var(--full);
+    margin-top: 96px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    > h3 {
+      font-size: 28px;
+      font-family: Noto-Bold;
+      margin-bottom: 48px;
+    }
+
+    .instList {
+      width: var(--full);
+      // display: flex;
+      // flex-wrap: nowrap;
+      // overflow-x: auto;
+      text-align: left;
+
+      // > * {
+      //   margin-right: 20px;
+      //   flex-shrink: 0;
+      //   max-width: 280px;
+
+      //   &:last-of-type {
+      //     margin-right: 0;
+      //   }
+      // }
+
+      .slideWrapper {
+        align-items: center;
+
+        > * {
+          > * {
+            width: 100% !important;
+            max-width: 350.47px;
+          }
+        }
+      }
+    }
+  }
+}

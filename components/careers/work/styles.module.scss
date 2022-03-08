@@ -1,0 +1,252 @@
+.work {
+  width: var(--full);
+  padding: 93px 0 80px;
+  background: var(--secondary-dark);
+
+  .wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-evenly;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      width: var(--full);
+      padding: 0px 16px;
+    }
+
+    .left {
+      width: 60%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+      }
+
+      .employment {
+        width: var(--full);
+
+        @media (max-width: 1200px) {
+          max-width: 512px;
+          margin: 0 auto;
+        }
+
+        p {
+          font-size: 17px;
+          font-family: Noto-Light;
+          max-width: 521px;
+          margin: 16px 0 40px;
+        }
+
+        .workVideo {
+          width: 527px;
+          max-width: var(--full);
+          height: 444px;
+          position: relative;
+        }
+      }
+
+      .requirement {
+        width: var(--full);
+        margin-top: 40px;
+
+        @media (max-width: 1200px) {
+          max-width: 512px;
+          margin: 40px auto 0;
+        }
+
+        p {
+          font-size: 17px;
+          font-family: Noto-Light;
+          max-width: 521px;
+          margin: 16px 0px;
+        }
+
+        .reqList {
+          margin-top: 16px;
+          max-width: 521px;
+          padding-left: 32px;
+
+          > li {
+            list-style-type: disc;
+            font-size: 17px;
+            font-family: Noto-Light;
+            line-height: 24px;
+            margin-bottom: 14px;
+            text-align: left;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .benefits {
+        width: var(--full);
+        margin-top: 40px;
+
+        @media (max-width: 1200px) {
+          max-width: 512px;
+          margin: 40px auto 0;
+        }
+
+        p {
+          font-size: 17px;
+          font-family: Noto-Light;
+          max-width: 521px;
+          margin: 16px 0px;
+        }
+
+        .reqList {
+          margin-top: 16px;
+          max-width: 521px;
+          padding-left: 32px;
+
+          > li {
+            list-style-type: disc;
+            font-size: 17px;
+            font-family: Noto-Light;
+            line-height: 24px;
+            margin-bottom: 14px;
+            text-align: left;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      // flex: 1;
+      width: 30%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        margin-top: 32px;
+      }
+
+      > h5 {
+        font-family: Noto-SemiBold;
+        color: var(--text-secondary);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .searchJobs {
+        margin-top: 18px;
+        width: var(--full);
+
+        @media (max-width: 1200px) {
+          max-width: 512px;
+          margin: 18px auto 0;
+        }
+
+        .searchWrapper {
+          height: 40px !important;
+        }
+
+        input {
+          background: transparent !important;
+          border-radius: 4px !important;
+          padding: 12px 12px 12px 45px !important;
+          border: 1px solid var(--secondary-ghost);
+          height: 40px !important;
+
+          &:focus {
+            border: 1px solid var(--orange);
+          }
+        }
+
+        label {
+          right: unset !important;
+          left: 16px;
+          top: 50% !important;
+          transform: translateY(-50%);
+          color: var(--secondary-ghost);
+        }
+
+        .jobsList {
+          width: var(--full);
+          margin-top: 32px;
+
+          @media (max-width: 1200px) {
+            max-width: 512px;
+            margin: 32px auto 0;
+          }
+
+          > li {
+            width: var(--full);
+            margin-bottom: 16px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+
+            a {
+              width: var(--full);
+              display: block;
+              padding: 25px 18px;
+              border-radius: 4px;
+              border: 1px solid var(--secondary-ghost);
+              white-space: pre-line;
+
+              h4 {
+                font-size: 16px;
+                font-family: Noto-SemiBold;
+                color: var(--text-primary);
+              }
+
+              .jobTags {
+                margin-top: 15px;
+                display: flex;
+                width: var(--full);
+
+                > span {
+                  font-size: 12px;
+                  color: var(--text-secondary);
+
+                  i {
+                    margin-right: 5px;
+                  }
+
+                  &:first-of-type {
+                    margin-right: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .loadMore {
+          margin-top: 48px;
+          display: flex;
+          justify-content: center;
+
+          > button {
+            background: transparent;
+            padding: 0;
+            display: flex;
+            align-items: baseline;
+            font-size: 15px;
+            font-family: Noto-Medium;
+
+            > i {
+              margin-left: 16px;
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

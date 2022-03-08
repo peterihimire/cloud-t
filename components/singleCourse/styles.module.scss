@@ -1,0 +1,117 @@
+.course {
+  width: var(--full);
+  background: #191919;
+
+  .wrapper {
+    width: var(--full);
+    display: flex;
+    // padding-right: 33px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    > .left {
+      width: 75%;
+      //   padding-bottom: 83px;
+      border-right: 1px solid var(--card-border);
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+      }
+
+      .hero {
+        width: var(--full);
+        padding: 230px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--linear-blue),
+          url("/images/single-course.png") no-repeat;
+        background-size: cover;
+
+        @media (max-width: 600px) {
+          padding: 120px 16px;
+        }
+
+        h1 {
+          text-transform: capitalize;
+          max-width: 528px;
+        }
+
+        .heroInfo {
+          display: flex;
+          margin-top: 15px;
+          align-items: center;
+
+          .tutor {
+            margin-left: 25px;
+            font-size: 14px;
+          }
+        }
+
+        > p {
+          max-width: 542px;
+          color: var(--text-secondary);
+          font-family: Noto-Light;
+          text-shadow: var(--text-shadow);
+          margin: 29px 0px 16px;
+        }
+
+        .heroActions {
+          display: flex;
+          width: var(--full);
+
+          @media (max-width: 903px) {
+            flex-direction: column;
+          }
+
+          > a {
+            margin-right: 10px;
+
+            @media (max-width: 903px) {
+              margin-bottom: 10px;
+
+              &:last-of-type {
+                margin-bottom: 0px;
+              }
+            }
+
+            &:last-of-type {
+              margin-right: 0px;
+              width: 292px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              max-width: 100%;
+              height: 56px;
+
+              @media screen and (max-width: 903px) {
+                width: 254px;
+              }
+
+              i {
+                margin-right: 10px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      .tabContent {
+        width: var(--full);
+        padding: 58px 80px;
+
+        @media (max-width: 600px) {
+          padding: 58px 16px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+}

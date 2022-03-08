@@ -1,0 +1,141 @@
+.webinar {
+  width: var(--full);
+  padding: 140px 0 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  @media (max-width: 903px) {
+    padding: 72px 0 0px;
+  }
+
+  .webinarLead {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 32px 140px;
+
+    .paraLead {
+      color: var(--orange);
+      font-size: 15px;
+      font-family: Noto-Medium;
+    }
+
+    h1 {
+      margin: 12px 0px 40px;
+      font-size: 40px;
+      font-family: Noto-Bold;
+      max-width: 772px;
+      text-align: center;
+
+      @media (max-width: 600px) {
+        font-size: 32px;
+      }
+    }
+
+    .countdown {
+      width: var(--full);
+
+      > p {
+        font-size: 15px;
+        font-family: Noto-Medium;
+        text-align: center;
+      }
+
+      .countBoxes {
+        margin-top: 16px;
+        width: var(--full);
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+          display: grid;
+          grid-template-columns: repeat(2, 100px);
+          gap: 20px;
+          align-items: center;
+        }
+
+        .countdownBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          @media (max-width: 600px) {
+            margin-right: 0px;
+          }
+
+          .countNumber {
+            width: 89px;
+            height: 92px;
+            border-radius: 4px;
+            border: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-family: Noto-Bold;
+            margin-bottom: 12px;
+          }
+
+          > span {
+            font-size: 13px;
+            color: var(--text-secondary);
+          }
+        }
+      }
+    }
+
+    .regLink {
+      display: flex;
+      width: var(--full);
+      justify-content: center;
+      margin-top: 32px;
+    }
+  }
+
+  .outro {
+    width: var(--full);
+    padding: 140px 16px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+    }
+
+    p {
+      margin: 24px 0 40px;
+      font-size: 20px;
+      font-family: Noto-Light;
+      max-width: 846px;
+
+      @media (max-width: 903px) {
+        max-width: 512px;
+      }
+    }
+  }
+}

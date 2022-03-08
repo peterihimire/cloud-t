@@ -1,0 +1,114 @@
+.learning {
+  width: var(--full);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0px;
+
+    @media (max-width: 903px) {
+      flex-direction: column-reverse;
+      width: var(--full);
+      text-align: center;
+      padding: 72px 16px;
+    }
+
+    .left {
+      width: 60%;
+
+      @media (max-width: 903px) {
+        flex-direction: column;
+        display: flex;
+        width: var(--full);
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 56px;
+        font-family: Noto-Bold;
+        max-width: 630px;
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      p {
+        max-width: 630px;
+        font-size: 20px;
+        font-family: Noto-Light;
+        margin: 24px 0 32px;
+      }
+    }
+
+    .right {
+      width: 38%;
+
+      @media (max-width: 903px) {
+        width: var(--full);
+        max-width: 512px;
+        margin-bottom: 48px;
+      }
+
+      img {
+        width: var(--full);
+      }
+    }
+  }
+
+  .learnContent {
+    width: var(--full);
+    background: var(--secondary-dark);
+    padding: 80px 0px;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    .contentHeader {
+      width: var(--full);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      p {
+        color: var(--orange);
+        font-family: Noto-Medium;
+        font-size: 15px;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-family: Noto-Bold;
+        margin-top: 12px;
+        max-width: 679px;
+
+        @media (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .content {
+      width: 90%;
+      margin: 100px auto 0px;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 600px) {
+        margin-top: 48px;
+        width: var(--full);
+      }
+    }
+  }
+}

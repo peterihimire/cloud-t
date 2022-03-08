@@ -1,0 +1,122 @@
+.filter {
+  width: 25%;
+  margin-right: 56px;
+
+  @media (max-width: 1200px) {
+    width: var(--full);
+    max-width: 512px;
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+
+  .filterList {
+    display: flex;
+    flex-direction: column;
+
+    > li {
+      width: var(--full);
+      position: relative;
+      margin-bottom: 7px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      > button {
+        background: transparent;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        color: var(--text-primary);
+        width: var(--full);
+        justify-content: space-between;
+        font-family: Noto-Medium;
+        border-bottom: 1px solid var(--ghost);
+
+        > i {
+          font-size: 12px;
+        }
+      }
+
+      .filterDrop {
+        position: relative;
+        width: var(--full);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+          opacity 0.4s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+          visibility 0.4s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+        padding-top: 10px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        &.show {
+          max-height: 700px;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all;
+          overflow-y: auto;
+        }
+
+        > label {
+          width: var(--full);
+          margin-bottom: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: rgba(244, 244, 244, 0.8);
+          font-size: 15px;
+          font-family: Noto-Light;
+          cursor: pointer;
+          height: 25px;
+          margin-bottom: 7px;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          .labelLeft {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+
+            input {
+              height: 16px !important;
+              width: 16px !important;
+              cursor: pointer;
+            }
+
+            span {
+              margin-left: 8px;
+            }
+          }
+
+          .labelRight {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  .clearBtn {
+    margin-top: 48px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    > button {
+      width: 196px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.form {
+  width: var(--full);
+  text-align: left;
+
+  .formGroup {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+    }
+
+    .inputInfo {
+      font-size: 12px;
+      font-family: Noto-Light;
+      display: block;
+      margin-top: 8px;
+    }
+  }
+
+  .formBtn {
+    width: var(--full);
+    margin-top: 40px;
+  }
+}

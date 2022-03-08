@@ -1,0 +1,70 @@
+.certCourse {
+  display: flex;
+  align-items: center;
+  background: var(--main-bg);
+  border-radius: 4px;
+  white-space: pre-wrap;
+  height: auto;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    max-width: 350px;
+    align-items: flex-start;
+  }
+
+  .left {
+    width: 40%;
+    height: 220px;
+
+    @media (max-width: 600px) {
+      width: var(--full);
+      height: 170px;
+    }
+
+    > img {
+      width: var(--full);
+      height: var(--full);
+      border-radius: 4px 0px 0px 4px;
+
+      @media (max-width: 600px) {
+        border-radius: 4px 4px 0px 0px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 32px 44px;
+
+    @media (max-width: 600px) {
+      padding: 20px 16px;
+    }
+
+    .title {
+      width: var(--full);
+
+      h3 {
+        font-size: 20px;
+        font-family: Noto-SemiBold;
+        max-width: 256px;
+      }
+    }
+
+    .cardLink {
+      margin-top: 51px;
+
+      > a {
+        color: var(--text-primary);
+        display: flex;
+        align-items: baseline;
+        width: fit-content;
+        font-size: 15px;
+
+        > i {
+          color: var(--primary);
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

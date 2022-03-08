@@ -1,0 +1,42 @@
+.recommendedCert {
+  width: 100%;
+  margin-top: 64px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    // @media screen and (max-width: 903px) {
+    //   padding: 0 16px;
+    // }
+
+    .header {
+      width: 100%;
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 32px;
+        font-family: Noto-Bold;
+        color: var(--text-primary);
+      }
+    }
+
+    .tabContent {
+      width: 100%;
+      margin-top: 41px;
+
+      .carousel {
+        width: 100%;
+
+        .slideWrapper {
+          align-items: center;
+
+          @media (max-width: 499px) {
+            max-width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

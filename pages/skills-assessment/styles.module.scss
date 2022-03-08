@@ -1,0 +1,53 @@
+.assessment {
+  width: var(--full);
+
+  .businessHero {
+    width: var(--full);
+    background: linear-gradient(
+        270.49deg,
+        rgba(24, 24, 24, 0) 1.14%,
+        #181818 99.63%
+      ),
+      url("/images/chessbg.svg") no-repeat bottom;
+    background-size: cover;
+    padding: 132px 0px;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+      background-position: center;
+    }
+
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: var(--full);
+      }
+
+      h1 {
+        font-size: 56px;
+        max-width: 638px;
+        font-family: Noto-Bold;
+        text-shadow: var(--text-shadow);
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      > p {
+        max-width: 630px;
+        font-family: Noto-Light;
+        font-size: 20px;
+        margin: 24px 0 32px;
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.certification {
+  width: var(--full);
+  background: var(--secondary-dark);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 96px 0;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      text-align: center;
+    }
+
+    .paraLead {
+      font-family: Noto-Medium;
+      color: var(--orange);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      max-width: 518px;
+    }
+
+    // .certGrid {
+    //   margin-top: 64px;
+    //   width: var(--full);
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    //   overflow-x: auto;
+    //   text-align: left;
+
+    //   > * {
+    //     margin-right: 20px;
+    //     max-width: 580px;
+    //     flex-basis: auto;
+
+    //     &:last-of-type {
+    //       margin-right: 0;
+    //     }
+    //   }
+    // }
+
+    .slideWrapper {
+      margin-top: 64px;
+    }
+  }
+}

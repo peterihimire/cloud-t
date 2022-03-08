@@ -1,0 +1,101 @@
+.inquiry {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    width: var(--full);
+    max-width: 512px;
+  }
+
+  .left {
+    width: 55%;
+
+    @media (max-width: 1200px) {
+      width: var(--full);
+    }
+
+    > h3 {
+      font-size: 15px;
+      font-family: Noto-Medium;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+
+    > h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      margin-bottom: 24px;
+    }
+
+    > p {
+      font-size: 17px;
+      font-family: Noto-Light;
+      max-width: 630px;
+    }
+
+    .helpList {
+      width: var(--full);
+      margin-top: 24px;
+
+      > li {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 16px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        > span {
+          font-size: 14px;
+          margin-left: 16px;
+          display: block;
+          max-width: 593px;
+        }
+      }
+    }
+
+    .helpAwards {
+      display: flex;
+      margin-top: 67px;
+      flex-wrap: wrap;
+
+      @media (max-width: 400px) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      > img {
+        margin-right: 40px;
+        margin-bottom: 20px;
+
+        @media (max-width: 400px) {
+          width: 60px;
+          height: 60px;
+        }
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    margin-left: 32px;
+
+    @media (max-width: 1200px) {
+      width: var(--full);
+      max-width: 900px;
+      margin-left: 0;
+      margin-top: 32px;
+    }
+  }
+}

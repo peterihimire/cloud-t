@@ -1,0 +1,70 @@
+.outreach {
+  width: var(--full);
+  padding: 149px 80px;
+  background: url("../../../public/images/outreach.png") no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    padding: 149px 16px;
+    background-image: url("../../../public/images/outreach.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  h3 {
+    font-family: Noto-Medium;
+    font-size: 15px;
+    color: var(--orange);
+  }
+
+  h2 {
+    font-family: Noto-Bold;
+    font-size: 32px;
+    margin: 12px 0px 24px;
+    max-width: 522px;
+  }
+
+  p {
+    font-family: Noto-Light;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 542px;
+    text-shadow: var(--text-shadow);
+  }
+
+  .outreachActions {
+    display: flex;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
+
+    > a {
+      &:first-of-type {
+        margin-right: 16px;
+
+        @media (max-width: 400px) {
+          margin-right: 0px;
+          margin-bottom: 16px;
+        }
+
+        > i {
+          font-size: 18px;
+        }
+
+        > span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

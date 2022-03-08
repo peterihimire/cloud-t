@@ -1,0 +1,54 @@
+.authWrapper {
+  width: var(--full);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+
+  .authLeft {
+    width: 48%;
+    height: 100vh;
+    background: linear-gradient(180deg, #5d55ff -17.87%, #252266 100%);
+    background-size: cover;
+    padding: 116px 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    .authInner {
+      width: var(--full);
+      height: 80vh;
+      background-image: url("/images/loginHero.svg"),
+        url("/images/login-spiral.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: center, center;
+
+      > h1 {
+        font-family: Noto-Bold;
+        font-size: 40px;
+        text-align: center;
+        max-width: 514px;
+        line-height: 1.1;
+      }
+    }
+  }
+
+  .authRight {
+    flex: 1 0 52%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 72px 57px;
+
+    @media (max-width: 1200px) {
+      flex: 1;
+      padding: 48px 16px;
+    }
+  }
+}

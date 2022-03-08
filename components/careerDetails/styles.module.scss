@@ -1,0 +1,88 @@
+.careerDetails {
+  width: var(--full);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 94px 0px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+      width: var(--full);
+      padding: 72px 16px;
+    }
+
+    > .left {
+      width: 60%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: Noto-Bold;
+        font-size: 40px;
+        margin-bottom: 16px;
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      .jobTags {
+        display: flex;
+        width: var(--full);
+
+        @media (max-width: 1200px) {
+          justify-content: center;
+        }
+
+        > span {
+          font-size: 14px;
+          color: var(--text-secondary);
+
+          i {
+            margin-right: 5px;
+          }
+
+          &:first-of-type {
+            margin-right: 18px;
+          }
+        }
+      }
+
+      .leadText {
+        margin-top: 32px;
+        font-size: 14px;
+        max-width: 522px;
+      }
+    }
+
+    > .right {
+      width: 40%;
+      // flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+      }
+
+      img {
+        height: 350px;
+
+        @media (max-width: 600px) {
+          width: var(--full);
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

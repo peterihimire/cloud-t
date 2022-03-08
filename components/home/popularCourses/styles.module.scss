@@ -1,0 +1,66 @@
+.popularCourses {
+  background: var(--secondary-dark);
+  padding: 72px 16px;
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      width: var(--full);
+    }
+
+    h2 {
+      color: var(--orange);
+      font-size: 15px;
+      font-family: Noto-SemiBold;
+      text-align: center;
+    }
+
+    .popularGrid {
+      width: var(--full);
+      margin-top: 52px;
+      // display: flex;
+      // overflow-x: auto;
+      // justify-content: center;
+
+      .slideWrapper {
+        align-items: center;
+
+        > * {
+          > * {
+            width: 100% !important;
+            max-width: 135px;
+          }
+        }
+      }
+
+      .courseCard {
+        width: 135px;
+        height: 125px;
+        border-radius: 4px;
+        background: var(--main-bg);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-primary);
+        font-size: 17px;
+        font-family: Noto-Bold;
+        // margin-right: 24px;
+        flex-shrink: 0;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        > img {
+          margin-bottom: 13px;
+          // width: 62px;
+          // height: 39px;
+        }
+      }
+    }
+  }
+}

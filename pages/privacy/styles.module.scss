@@ -1,0 +1,83 @@
+.privacy {
+  width: var(--full);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+}
+.policy {
+  //   width: var(--full);
+  padding: 140px 16px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.policy h4 {
+  font-family: Noto-Medium;
+  font-size: 15px;
+  color: var(--orange);
+}
+.policy h1 {
+  font-size: 40px;
+  color: var(--text-primary);
+  font-family: Noto-Bold;
+  margin-top: 10px;
+
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
+}
+.policyText {
+  margin: 80px 150px;
+  // width: 1500px;
+  padding: 89px 150px;
+  background-color: var(--secondary-dark);
+  text-align: left;
+  border-radius: 8px;
+}
+
+.privacy p {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+.policyList {
+  margin: 50px 0;
+}
+.policyList p {
+  margin: 15px 0;
+  word-break: break-word;
+}
+
+@media (max-width: 1200px) {
+  .policyText {
+    margin: 80px auto;
+    width: 90%;
+    padding: 89px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .policyText {
+    margin: 80px auto;
+    width: var(--full);
+    padding: 72px 16px;
+  }
+}

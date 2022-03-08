@@ -1,0 +1,26 @@
+@mixin font($font, $size) {
+  font: {
+    family: $font;
+    size: $size;
+  }
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+.formGroup {
+  margin-top: 2em;
+  input {
+    background: var(--secondary-dark) !important;
+    border: 1px solid var(--secondary-dark) !important;
+    border-radius: 4px !important;
+
+    &:focus {
+      border: 1px solid var(--orange) !important;
+    }
+  }
+  .mt {
+    margin-top: 2em;
+  }
+}

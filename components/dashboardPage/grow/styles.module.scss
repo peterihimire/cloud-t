@@ -1,0 +1,107 @@
+.grow {
+  width: 100%;
+  margin-top: 64px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    // @media screen and (max-width: 903px) {
+    //   padding: 0 16px;
+    // }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+      color: var(--text-primary);
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      width: 100%;
+      display: flex;
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      .card {
+        background: var(--secondary-dark);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        padding: 0px 24px;
+        flex: 1;
+
+        &:first-of-type {
+          margin-right: 20px;
+
+          @media screen and (max-width: 1200px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 24px;
+        }
+
+        .cardImg {
+          width: 198px;
+          flex-shrink: 0;
+          padding: 19px 0px;
+
+          @media screen and (max-width: 600px) {
+            padding: 0px;
+            width: 30%;
+            margin-bottom: 20px;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .cardBody {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 49px;
+
+          @media screen and (max-width: 600px) {
+            align-items: center;
+            padding: 0px;
+          }
+
+          h3 {
+            font-size: 15px;
+            font-family: Noto-SemiBold;
+            color: var(--text-primary);
+          }
+
+          p {
+            max-width: 317px;
+            color: rgba(244, 244, 244, 0.8);
+            font-size: 12px;
+            margin: 8px 0px 24px;
+
+            @media screen and (max-width: 1200px) {
+              max-width: 80%;
+            }
+          }
+
+          a {
+            color: var(--orange);
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

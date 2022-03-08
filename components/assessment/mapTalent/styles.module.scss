@@ -1,0 +1,137 @@
+.mapTalent {
+  width: var(--full);
+  background: var(--secondary-dark);
+  padding: 120px 0px;
+
+  @media (max-width: 903px) {
+    padding: 72px 16px;
+  }
+
+  .lead {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    p {
+      font-size: 15px;
+      font-family: Noto-Medium;
+      margin-bottom: 12px;
+      color: var(--orange);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-family: Noto-Bold;
+      max-width: 654px;
+      text-align: center;
+
+      @media (max-width: 600px) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 903px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left {
+      width: 45%;
+
+      @media (max-width: 903px) {
+        width: var(--full);
+        max-width: 512px;
+        margin-bottom: 48px;
+      }
+
+      .video {
+        width: var(--full);
+        height: 444px;
+        position: relative;
+      }
+    }
+
+    .right {
+      width: 45%;
+
+      @media (max-width: 903px) {
+        width: var(--full);
+        max-width: 512px;
+      }
+
+      ul {
+        width: var(--full);
+
+        li {
+          width: var(--full);
+          margin-bottom: 32px;
+          position: relative;
+          display: flex;
+          align-items: flex-start;
+
+          &:last-of-type {
+            margin-bottom: 0px;
+
+            &::after {
+              opacity: 0;
+            }
+          }
+
+          &::before {
+            content: attr(data-step);
+            font-size: 13px;
+            font-family: Noto-Bold;
+            background: var(--orange);
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+          }
+
+          &::after {
+            content: "";
+            width: 1px;
+            height: var(--full);
+            position: absolute;
+            top: 34px;
+            left: 16px;
+            background: var(--text-primary);
+            z-index: 1;
+          }
+
+          .step {
+            margin-left: 16px;
+
+            h3 {
+              font-size: 28px;
+              font-family: Noto-Bold;
+              max-width: 310px;
+              margin-bottom: 16px;
+            }
+
+            p {
+              font-size: 14px;
+              max-width: 356px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

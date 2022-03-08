@@ -1,0 +1,196 @@
+.overviewInfo {
+  width: var(--full);
+  display: flex;
+
+  @media (max-width: 903px) {
+    flex-direction: column;
+  }
+
+  .overviewInfoLeft {
+    width: 24%;
+    flex-shrink: 0;
+    margin-right: 100px;
+
+    @media (max-width: 903px) {
+      width: var(--full);
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+
+    .overviewSkill,
+    .overviewDuration {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      > span {
+        font-size: 14px;
+        font-family: Noto-SemiBold;
+
+        &:first-of-type {
+          font-family: Noto-Light;
+        }
+      }
+    }
+
+    .overviewRatings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > span {
+        font-size: 14px;
+        font-family: Noto-Light;
+      }
+    }
+  }
+
+  .overviewInfoRight {
+    flex: 1;
+
+    > p {
+      font-size: 17px;
+      font-family: Noto-Light;
+      max-width: 542px;
+      color: rgba(244, 244, 244, 0.8);
+    }
+  }
+}
+
+.tabOverviewReq {
+  width: var(--full);
+  margin: 96px 0px;
+
+  > h3 {
+    font-size: 28px;
+    font-family: Noto-Bold;
+  }
+
+  .requirements {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 310px);
+    gap: 20px;
+    width: var(--full);
+
+    @media (max-width: 903px) {
+      display: block;
+    }
+
+    .requirement {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 903px) {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .reqLeft {
+        border-radius: var(--radius);
+        background: var(--main-bg);
+        width: 88px;
+        height: 88px;
+        flex-shrink: 0;
+        font-size: 23px;
+        color: var(--orange);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .reqRight {
+        margin-left: 20px;
+
+        p {
+          font-size: 14px;
+          max-width: 197px;
+          color: rgba(244, 244, 244, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.author {
+  width: var(--full);
+
+  > h3 {
+    font-size: 28px;
+    font-family: Noto-Bold;
+  }
+
+  .authorInfo {
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 32px;
+
+    @media (max-width: 903px) {
+      flex-direction: column;
+    }
+
+    .authorInfoLeft {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      align-items: center;
+
+      .authorImg {
+        width: 100px;
+        height: 100px;
+
+        img {
+          width: var(--full);
+          height: var(--full);
+          border-radius: 50%;
+        }
+      }
+
+      .authorName {
+        display: block;
+        margin-top: 16px;
+        font-size: 17px;
+        font-family: Noto-Medium;
+      }
+    }
+
+    .authorInfoRight {
+      margin-left: 82px;
+
+      @media (max-width: 903px) {
+        margin-left: 0px;
+        margin-top: 32px;
+      }
+
+      > p {
+        font-size: 17px;
+        font-family: Noto-Light;
+        max-width: 630px;
+        margin-bottom: 27px;
+        color: rgba(244, 244, 244, 0.8);
+      }
+
+      a {
+        color: var(--text-primary);
+        font-family: Noto-Medium;
+        font-size: 15px;
+        display: flex;
+        align-items: baseline;
+        width: fit-content;
+
+        i {
+          color: var(--primary);
+          margin-left: 16px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

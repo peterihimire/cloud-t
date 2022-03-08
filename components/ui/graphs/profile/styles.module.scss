@@ -1,0 +1,59 @@
+.profileGraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
+  // margin-left: 16px;
+
+  .graphBody {
+    width: 100%;
+    margin-bottom: 47px;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+    .profileInfo {
+      width: fit-content;
+      margin-left: 25px;
+
+      ul {
+        li {
+          color: rgba(244, 244, 244, 0.8);
+          font-size: 14px;
+          margin-bottom: 12px;
+
+          &.active {
+            color: var(--white);
+          }
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .graphFooter {
+    margin-top: auto;
+
+    button {
+      // width: 203px;
+      padding: 11px 16px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--white);
+
+      span {
+        &:last-of-type {
+          margin-left: 8px;
+          font-family: Noto-Medium;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.insightPopular {
+  height: auto;
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid var(--card-border);
+  white-space: pre-line;
+  color: var(--text-primary);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 30%;
+    height: 188px;
+
+    @media (max-width: 600px) {
+      width: var(--full);
+      height: 200px;
+    }
+
+    img {
+      width: var(--full);
+      height: var(--full);
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 12px 24px 16px;
+
+    h4 {
+      font-size: 12px;
+      font-family: Noto-Regular;
+      color: var(--orange);
+    }
+
+    .title {
+      margin: 12px 0 8px;
+
+      h3 {
+        font-size: 20px;
+        font-family: Noto-SemiBold;
+        max-width: 355px;
+      }
+    }
+
+    .desc {
+      p {
+        max-width: 355px;
+        font-size: 13px;
+        font-family: Noto-Light;
+      }
+    }
+  }
+}

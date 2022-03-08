@@ -1,0 +1,25 @@
+.loadMore {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+
+  .loader {
+    width: 52px;
+    height: 52px;
+    background: var(--white);
+
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+    }
+  }
+
+  .text {
+    font-family: Noto-Medium;
+    font-size: 15px;
+    color: var(--text-primary);
+    margin-left: 4px;
+  }
+}

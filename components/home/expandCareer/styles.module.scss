@@ -1,0 +1,134 @@
+.expandCareer {
+  width: var(--full);
+  padding: 80px 16px;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+    }
+
+    > .left {
+      width: 45%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+      }
+
+      > h3 {
+        font-family: Noto-Medium;
+        font-size: 15px;
+        color: var(--orange);
+      }
+
+      > h2 {
+        font-size: 32px;
+        font-family: Noto-Bold;
+        margin: 12px 0 24px;
+        max-width: 574px;
+      }
+
+      > p {
+        color: var(--text-secondary);
+        font-family: Noto-Light;
+        font-size: 17px;
+        margin-bottom: 32px;
+
+        @media (max-width: 1200px) {
+          max-width: 630px;
+        }
+      }
+
+      .expandGrid {
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 20px;
+
+        @media (max-width: 1200px) {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+          display: block;
+        }
+
+        .expandCard {
+          display: flex;
+          align-items: center;
+
+          @media (max-width: 600px) {
+            width: var(--full);
+            max-width: 300px;
+            margin: 0 auto 24px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+          > .left {
+            width: 88px;
+            height: 88px;
+            background: var(--secondary-dark);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 30px;
+            color: var(--orange);
+            font-size: 32px;
+          }
+
+          > .right {
+            margin-left: 20px;
+
+            > p {
+              font-size: 14px;
+              color: var(--text-secondary);
+              max-width: 197px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      > a {
+        display: flex;
+        width: fit-content;
+        color: var(--text-primary);
+        font-size: 15px;
+        align-items: baseline;
+        margin-top: 35px;
+
+        > i {
+          margin-left: 16px;
+          color: var(--primary);
+        }
+      }
+    }
+
+    > .right {
+      @media (max-width: 600px) {
+        width: var(--full);
+        max-width: 400px;
+
+        > img {
+          width: var(--full);
+        }
+      }
+    }
+  }
+}

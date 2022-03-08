@@ -1,0 +1,80 @@
+@mixin font($font, $size) {
+  font: {
+    family: $font;
+    size: $size;
+  }
+}
+
+@mixin textColor($color) {
+  color: $color;
+}
+
+@mixin wrapperStyles {
+  background: var(--secondary-dark);
+  padding: 1.8em 1.5em;
+  margin: 2em 0;
+  border-radius: 8px;
+  justify-content: between;
+  display: flex;
+}
+
+.wrapper {
+  flex: 8;
+
+  .billingWrapper {
+    @include wrapperStyles;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .flex {
+      flex: 1;
+      .name {
+        @include font(Noto-Bold, 0.9em);
+      }
+      .email {
+        @include font(Noto-Light, 0.9em);
+        margin-top: 5px;
+      }
+      .address {
+        @include font(Noto-Light, 0.95em);
+        margin-top: 25px;
+        width: 180px;
+      }
+    }
+
+    .button {
+      button {
+        text-transform: uppercase;
+      }
+      @media (max-width: 768px) {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .paymentWrapper {
+    background: var(--secondary-dark);
+    padding: 1.8em 1.5em;
+    margin: 2em 0;
+    border-radius: 8px;
+
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .name {
+        @include font(Noto-Bold, 0.9em);
+        margin-left: 1em;
+      }
+    }
+
+    .button {
+      button {
+        text-transform: uppercase;
+        margin-top: 1em;
+      }
+    }
+  }
+}

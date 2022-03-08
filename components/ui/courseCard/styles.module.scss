@@ -1,0 +1,70 @@
+.courseCard {
+  height: auto;
+  border-radius: 4px;
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  display: block;
+
+  &:hover {
+    h5 {
+      text-decoration: underline;
+    }
+  }
+
+  &.bordered {
+    border: 1px solid var(--card-border);
+  }
+
+  .courseImg {
+    width: var(--full);
+    height: 154px;
+
+    > img {
+      width: var(--full);
+      height: var(--full);
+      border-radius: 4px 4px 0px 0px;
+    }
+  }
+
+  .courseCardBody {
+    padding: 12px;
+    width: var(--full);
+
+    > h5 {
+      font-family: Noto-SemiBold;
+      font-size: 15px;
+      text-transform: capitalize;
+      max-width: 256px;
+    }
+
+    > p {
+      font-size: 13px;
+      margin: 8px 0;
+      color: rgba(244, 244, 244, 0.7);
+
+      span {
+        font-family: Noto-Light;
+        color: rgba(244, 244, 244, 0.7);
+      }
+    }
+
+    .courseCardFooter {
+      display: flex;
+      align-items: center;
+
+      .courseRating {
+        font-size: 17px;
+        color: var(--orange);
+        font-family: Noto-Bold;
+      }
+
+      .courseRatingNo {
+        font-size: 13px;
+        font-family: Noto-Light;
+        margin-left: 8px;
+        color: rgba(244, 244, 244, 0.7);
+      }
+    }
+  }
+}

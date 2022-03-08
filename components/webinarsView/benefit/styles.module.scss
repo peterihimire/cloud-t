@@ -1,0 +1,88 @@
+.benefit {
+  width: var(--full);
+  background: var(--secondary-dark);
+
+  .wrapper {
+    width: 90%;
+    padding: 120px 0;
+    display: flex;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      width: var(--full);
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;;
+    }
+
+    .left {
+      width: 65%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+        margin-bottom: 32px;
+      }
+
+      > p {
+        font-size: 17px;
+        font-family: Noto-Light;
+        margin-bottom: 25px;
+        max-width: 630px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .right {
+      width: 35%;
+      max-width: 413px;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+        margin-bottom: 32px;
+      }
+
+      > form {
+        width: var(--full);
+        text-align: left;
+
+        .formGroup {
+          width: var(--full);
+          margin-bottom: 24px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          input {
+            background: transparent;
+          }
+        }
+
+        .formBtn {
+          width: var(--full);
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

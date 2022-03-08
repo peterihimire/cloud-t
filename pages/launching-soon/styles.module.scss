@@ -1,0 +1,84 @@
+.container {
+  min-height: 100vh;
+  height: var(--full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+  background: var(--secondary-dark);
+}
+
+.launch {
+  max-width: 870px;
+  width: var(--full);
+}
+
+.launch,
+.launchText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.launchText {
+  padding: 16px;
+}
+
+.launch img {
+  margin: 30px 0;
+}
+
+.launchText h1 {
+  font-family: Noto-Bold;
+  font-size: 56px;
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  margin: 10px 0;
+
+  @media (max-width: 600px) {
+    font-size: 34px;
+  }
+}
+
+.launchText p:not(.emailList) {
+  max-width: 846px;
+  font-family: Noto-Light;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.form {
+  width: var(--full);
+  margin: 48px 0px 24px;
+  max-width: 630px;
+
+  .formGroup {
+    display: flex;
+
+    input {
+      background: var(--main-bg);
+      border: 1px solid var(--main-bg);
+      border-radius: 8px !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.launchText p.emailList {
+  font-size: 17px;
+  font-family: Noto-Light;
+
+  > span {
+    font-family: Noto-Bold;
+    font-size: 17px;
+    color: var(--orange);
+  }
+}

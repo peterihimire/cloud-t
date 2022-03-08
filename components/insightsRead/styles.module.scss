@@ -1,0 +1,221 @@
+.insightsRead {
+  width: var(--full);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  .wrapper {
+    width: var(--full);
+    max-width: 846px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 140px 0 260px;
+    position: relative;
+
+    @media (max-width: 903px) {
+      padding: 140px 16px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 72px 16px;
+    }
+
+    .paraLead {
+      font-size: 15px;
+      font-family: Noto-Medium;
+      color: var(--orange);
+    }
+
+    h1 {
+      max-width: 772px;
+      margin: 16px 0 27px;
+      font-size: 40px;
+      font-family: Noto-Bold;
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+
+    .paraDate {
+      font-family: Noto-Light;
+      font-size: 20px;
+      margin-bottom: 72px;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+
+    .insightsImg {
+      width: var(--full);
+      max-width: 846px;
+      position: absolute;
+      top: 410px;
+      z-index: 12;
+
+      @media (max-width: 903px) {
+        position: relative;
+        top: 0;
+      }
+
+      > img {
+        width: var(--full);
+      }
+    }
+  }
+
+  .details {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .detailsWrapper {
+      width: var(--full);
+      max-width: 846px;
+      margin: 0 auto;
+      padding: 275px 0 140px;
+
+      @media (max-width: 903px) {
+        padding: 140px 16px;
+      }
+
+      @media (max-width: 600px) {
+        padding: 72px 16px;
+      }
+
+      .intro {
+        font-family: Noto-Light;
+        font-size: 17px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-family: Noto-Bold;
+        margin-top: 40px;
+      }
+
+      .mainRead {
+        margin-top: 12px;
+
+        > p {
+          font-size: 17px;
+          font-family: Noto-Light;
+        }
+
+        > hr {
+          border: 1px solid var(--card-border);
+          margin: 24px 0px 0px;
+
+          &:last-of-type {
+            margin: 50px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .popular {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .popularWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0px 0px 80px;
+
+      @media (max-width: 903px) {
+        padding: 0px 16px 80px;
+      }
+
+      @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-family: Noto-Bold;
+        margin-bottom: 40px;
+      }
+
+      .popularGrid {
+        width: var(--full);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1200px) {
+          max-width: 700px;
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width: 600px) {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+
+  .newsLetter {
+    width: var(--full);
+    padding: 140px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+    }
+
+    > p {
+      margin: 24px 0;
+      max-width: 675px;
+      font-size: 20px;
+      font-family: Noto-Light;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+
+    form {
+      width: var(--full);
+      max-width: 414px;
+      margin: 0 auto;
+
+      .formGroup {
+        margin-bottom: 16px;
+      }
+
+      .formBtn {
+        width: var(--full);
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.instructorCard {
+  height: auto;
+  border-radius: 4px;
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  display: block;
+
+  .cardImg {
+    width: var(--full);
+    height: 242px;
+
+    img {
+      width: var(--full);
+      height: var(--full);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+
+  .cardBody {
+    width: var(--full);
+    padding: 25px 27px;
+
+    .cardTitle {
+      width: var(--full);
+
+      h3 {
+        font-size: 20px;
+        font-weight: Noto-SemiBold;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .cardDesc {
+      margin-top: 16px;
+      width: var(--full);
+
+      p {
+        max-width: 304px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cardFooter {
+    width: var(--full);
+    padding: 0px 27px 25px;
+    display: flex;
+
+    a {
+      color: var(--secondary-ghost);
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: var(--text-primary);
+      }
+    }
+  }
+}

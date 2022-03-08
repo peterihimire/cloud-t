@@ -1,0 +1,60 @@
+@mixin direction($align) {
+  display: flex;
+  align-items: $align;
+  justify-content: space-between;
+}
+
+@mixin fonts($family, $size) {
+  font: {
+    family: $family;
+    size: $size;
+  }
+}
+
+.wrapper {
+  flex: 8;
+  // padding: 0 4em;
+  @media (max-width: 769px) {
+    padding: 0;
+    margin-top: 5em;
+  }
+  .notificationHeader {
+    @include direction(center);
+    @include fonts(Noto-bold, 1em);
+    padding: 0em 2em;
+    background-color: #212121;
+    border-radius: 4px;
+    @media (max-width: 900px) {
+      // padding: 1em 2rem 1em 2em;
+    }
+  }
+
+  .notificationItems {
+    @include direction(flex-start);
+    @include fonts(Noto-light, 0.9em);
+    padding: 0 2em;
+  }
+
+  .itemsRight {
+    // display: flex;
+    // align-self: center;
+    flex: 1;
+  }
+  .itemsLeft {
+    padding-right: 1em;
+    flex: 11;
+  }
+
+  .subWrapperBorder {
+    border-left: 0.4px solid rgba(244, 244, 244, 0.2);
+    border-right: 0.4px solid rgba(244, 244, 244, 0.2);
+    border-bottom: 0.4px solid rgba(244, 244, 244, 0.2);
+    border-radius: 8px;
+    padding-top: 2em;
+    padding-bottom: 10px;
+
+    @media screen and (max-width: 700px) {
+      padding-bottom: 32px;
+    }
+  }
+}

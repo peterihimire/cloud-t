@@ -1,0 +1,51 @@
+.businessPage {
+  width: var(--full);
+
+  .businessHero {
+    width: var(--full);
+    background: linear-gradient(
+        86.05deg,
+        #181818 3.56%,
+        rgba(24, 24, 24, 0) 97.14%
+      ),
+      url("/images/Rectangle 2.svg") no-repeat;
+    background-size: cover;
+    padding: 132px 0px;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+      background-position: center;
+    }
+
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: var(--full);
+      }
+
+      h1 {
+        font-size: 56px;
+        max-width: 638px;
+        font-family: Noto-Bold;
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      > p {
+        max-width: 630px;
+        font-family: Noto-Light;
+        font-size: 20px;
+        margin: 24px 0 32px;
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+}

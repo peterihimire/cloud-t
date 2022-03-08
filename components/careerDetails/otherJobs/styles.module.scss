@@ -1,0 +1,87 @@
+.otherJobs {
+  width: var(--full);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 140px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: 400px) {
+      padding: 140px 0px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-family: Noto-Bold;
+    }
+
+    > p {
+      max-width: 846px;
+      font-family: Noto-Light;
+      font-size: 20px;
+      text-align: center;
+      margin: 24px 0px 32px;
+    }
+
+    .jobsGrid {
+      width: var(--full);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: left;
+
+      @media (max-width: 1275px) {
+        grid-template-columns: repeat(1, 512px);
+        justify-content: center;
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      > li {
+        @media (max-width: 1200px) {
+          max-width: 512px;
+        }
+
+        a {
+          width: var(--full);
+          display: block;
+          padding: 25px 18px;
+          border-radius: 4px;
+          border: 1px solid var(--secondary-ghost);
+          white-space: pre-line;
+
+          h4 {
+            font-size: 16px;
+            font-family: Noto-SemiBold;
+            color: var(--text-primary);
+          }
+
+          .jobTags {
+            margin-top: 15px;
+            display: flex;
+            width: var(--full);
+
+            > span {
+              font-size: 12px;
+              color: var(--text-secondary);
+
+              i {
+                margin-right: 5px;
+              }
+
+              &:first-of-type {
+                margin-right: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

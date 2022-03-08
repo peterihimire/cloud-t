@@ -1,0 +1,56 @@
+.onboarding {
+  width: 100%;
+  padding: 148px 0px;
+
+  .leadWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 36px;
+    padding: 0px 16px;
+
+    h1 {
+      text-align: center;
+      font-family: Noto-Bold;
+      color: var(--white);
+      margin-bottom: 24px;
+      font-size: 56px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 34px;
+      }
+    }
+
+    p {
+      text-align: center;
+      max-width: 684px;
+      font-family: Noto-Light;
+      color: var(--white);
+      font-size: 17px;
+    }
+  }
+
+  .stepContent {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 846px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--secondary-dark);
+    padding: 80px 72px;
+    border-radius: 8px;
+
+    &.mt274 {
+      margin-top: 274px;
+    }
+
+    @media screen and (max-width: 903px) {
+      padding: 80px 16px;
+    }
+
+    @media screen and (max-width: 400px) {
+      border-radius: 0;
+    }
+  }
+}

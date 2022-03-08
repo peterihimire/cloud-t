@@ -1,0 +1,56 @@
+.certsCard {
+  flex: 1;
+  flex-shrink: 0;
+  height: auto;
+  border-radius: 4px;
+  background: var(--main-bg);
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  display: block;
+  text-align: left;
+
+  @media (max-width: 600px) {
+    width: var(--full);
+    max-width: 300px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .certsCardImg {
+    width: var(--full);
+    height: 159px;
+
+    > img {
+      width: var(--full);
+      height: var(--full);
+    }
+  }
+
+  .certsCardBody {
+    padding: 12px 12px 37px;
+    width: var(--full);
+
+    // @media (max-width: 600px) {
+    //   text-align: center;
+    // }
+
+    > h4 {
+      font-family: Noto-SemiBold;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    > p {
+      max-width: 250px;
+      font-size: 13px;
+      font-family: Noto-Light;
+
+      // @media (max-width: 600px) {
+      //   margin: 0 auto;
+      // }
+    }
+  }
+}

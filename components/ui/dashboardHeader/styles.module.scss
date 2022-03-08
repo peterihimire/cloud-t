@@ -1,0 +1,42 @@
+.header {
+  width: var(--full);
+  height: 97px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  z-index: 300;
+  background: var(--secondary-dark);
+  transform: translateX(-50%);
+  max-width: var(--wrapper-max-width);
+
+  @media (max-width: 1275px) {
+    height: 55px;
+    left: 0;
+    transform: none;
+  }
+
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1275px) {
+      align-items: center;
+      width: var(--full);
+      padding: 0 16px;
+    }
+
+    .logo {
+      width: 170px;
+    }
+
+    .hamburgerBtn {
+      display: none;
+
+      @media (max-width: 1275px) {
+        display: block;
+      }
+    }
+  }
+}

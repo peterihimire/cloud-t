@@ -1,0 +1,22 @@
+.settings {
+  padding: 3em 5em;
+
+  @media (max-width: 769px) {
+    padding: 1em;
+  }
+
+  .settingsText {
+    font: {
+      family: Noto-Bold;
+      size: 3.5em;
+    }
+    letter-spacing: -2%;
+    color: #f5f5ff;
+    margin: 20px 0;
+    @media (max-width: 768px) {
+      font: {
+        size: 2em;
+      }
+    }
+  }
+}

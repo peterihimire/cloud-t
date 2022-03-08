@@ -1,0 +1,35 @@
+:root {
+  --text-primary: #f5f5ff;
+  --text-secondary: #f4f4f4;
+  --primary: #5d55ff;
+  // --primary: #463edd;
+  --primary-shade: #9a95f3;
+  --linear-blue: linear-gradient(
+    358.74deg,
+    rgba(7, 0, 41, 0.75) 114.88%,
+    rgba(7, 0, 41, 0) 157.06%
+  );
+  --gold: #f9c32b;
+  --red: #cb2c16;
+  // --main-bg: rgba(244, 244, 244, 0.8);
+  --main-bg: #181818;
+  --secondary-dark: #212121;
+  --orange: #ff8662;
+  --green: #01a325;
+  --primary-gradient: linear-gradient(111.15deg, #5d55ff 0%, #ff8662 100%);
+  --text-shadow: 2px 2px 4px #000000;
+  --white: #fff;
+  --fade: #e4e6eb;
+  --secondary-ghost: #8e8e8e;
+  --ghost: #ccc;
+  --card-border: rgba(244, 244, 244, 0.1);
+  --dropdown-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  --full: 100%;
+  --radius: 2px;
+  --wrapper-max-width: 1980px;
+  --wrapper-min-width: 240px;
+}
+
+// will use next-themes package later for toggling between dark and light themes

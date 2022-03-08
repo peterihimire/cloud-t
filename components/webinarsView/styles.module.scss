@@ -1,0 +1,143 @@
+.webinarView {
+  width: var(--full);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 138px 0px 84px;
+    display: flex;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      width: var(--full);
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+
+    .left {
+      width: 60%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 64px;
+      }
+
+      .webinarInfo {
+        display: flex;
+        text-align: left;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+
+        > span {
+          color: var(--orange);
+          font-size: 14px;
+          margin-right: 16px;
+
+          &:last-of-type {
+            margin-right: 0;
+
+            @media (max-width: 600px) {
+              margin-top: 16px;
+            }
+          }
+
+          .iconn,
+          i {
+            margin-right: 7px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 56px;
+        font-family: Noto-Bold;
+        max-width: 638px;
+        margin-top: 14px;
+        margin-bottom: 32px;
+
+        @media (max-width: 600px) {
+          font-size: 34px;
+        }
+      }
+
+      > p {
+        max-width: 630px;
+        font-family: Noto-Light;
+        font-size: 20px;
+
+        @media (max-width: 600px) {
+          font-size: 18px;
+        }
+      }
+
+      .webinarActions {
+        display: flex;
+        align-items: center;
+        width: var(--full);
+        margin-top: 32px;
+
+        @media (max-width: 1200px) {
+          justify-content: center;
+        }
+
+        @media (max-width: 400px) {
+          flex-direction: column;
+        }
+
+        .alarmBtn {
+          width: fit-content;
+          background: transparent;
+          color: var(--text-primary);
+          margin-left: 34px;
+          font-size: 15px;
+          font-family: Noto-Medium;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media (max-width: 400px) {
+            margin-left: 0;
+            margin-top: 16px;
+          }
+
+          i {
+            margin-right: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .workVideo {
+        width: 522px;
+        max-width: var(--full);
+        height: 444px;
+        position: relative;
+      }
+    }
+  }
+}

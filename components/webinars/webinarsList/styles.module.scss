@@ -1,0 +1,90 @@
+.webinarsList {
+  width: var(--full);
+  padding: 96px 16px;
+  background: var(--secondary-dark);
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      width: 95%;
+    }
+
+    .filterGrid {
+      width: var(--full);
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 903px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input,
+      select {
+        background: var(--secondary-dark);
+        border: 1px solid var(--secondary-ghost);
+
+        &:focus {
+          border: 1px solid var(--orange);
+        }
+      }
+
+      // label {
+      //   color: var(--secondary-ghost);
+      // }
+
+      .searchBox {
+        width: 40%;
+        max-width: 413px;
+        margin-right: 20px;
+
+        @media (max-width: 903px) {
+          margin-right: 0px;
+          margin-bottom: 20px;
+          width: var(--full);
+          max-width: 512px;
+        }
+      }
+
+      .filterBox {
+        width: 30%;
+        max-width: 197px;
+        margin-right: 20px;
+
+        @media (max-width: 903px) {
+          margin-right: 0px;
+          margin-bottom: 20px;
+          width: var(--full);
+          max-width: 512px;
+        }
+      }
+
+      .yearBox {
+        width: 20%;
+        max-width: 128px;
+
+        @media (max-width: 903px) {
+          width: var(--full);
+          max-width: 512px;
+        }
+      }
+    }
+
+    .webinarGrid {
+      width: var(--full);
+      max-width: 1100px;
+      margin: 80px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @media (max-width: 903px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 400px;
+        max-width: var(--full);
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.pricings {
+  width: var(--full);
+  padding: 140px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    width: var(--full);
+    height: var(--full);
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../public/images/tapeBg.PNG") no-repeat center;
+    background-size: 170%;
+    opacity: 0.75;
+    z-index: -1;
+    max-width: var(--wrapper-max-width);
+    min-width: var(--wrapper-min-width);
+  }
+
+  @media (max-width: 600px) {
+    padding: 72px 0;
+  }
+
+  .pricingsLead {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+
+    > p {
+      font-size: 15px;
+      color: var(--orange);
+      font-family: Noto-Medium;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: Noto-Bold;
+      text-align: center;
+
+      @media (max-width: 903px) {
+        max-width: 468px;
+      }
+    }
+  }
+
+  .pricingSection {
+    width: var(--full);
+    padding: 0px 16px;
+    margin-top: 62px;
+  }
+
+  .companiesSect {
+    width: var(--full);
+    background: var(--secondary-dark);
+  }
+
+  .faqSect {
+    padding: 140px 16px 0px;
+    width: var(--full);
+
+    .contactLink {
+      margin-top: 43px;
+      text-align: center;
+      font-size: 15px;
+
+      a {
+        color: var(--primary);
+        font-family: Noto-Medium;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

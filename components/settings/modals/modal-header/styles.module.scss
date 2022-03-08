@@ -1,0 +1,49 @@
+@mixin font($font, $size) {
+  font: {
+    family: $font;
+    size: $size;
+  }
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div h1 {
+    @include font(Noto-Bold, 1.5em);
+    @include color(rgba(245, 245, 255, 1));
+  }
+  .headerButton {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-dark);
+    // font-size: 1.2em;
+    cursor: pointer;
+    flex-shrink: 0;
+    @include color(rgba(245, 245, 255, 1));
+    @include font(Noto-Light, 1.5em);
+    &:hover {
+      background: #c4c4c4;
+      @include color(rgb(69, 69, 70));
+      @include font(Noto-Light, 1.5em);
+    }
+  }
+}
+
+.subText {
+  @include color(rgba(245, 245, 255, 1));
+  @include font(Noto-Light, 1em);
+  margin-top: 10px;
+  padding-right: 2.2em;
+  @media (max-width: 700px) {
+    padding-right: 1em;
+  }
+}

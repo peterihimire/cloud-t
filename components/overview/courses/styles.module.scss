@@ -1,0 +1,67 @@
+.courses {
+  width: var(--full);
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 72px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    @media (max-width: 1200px) {
+      width: var(--full);
+      flex-direction: column;
+    }
+
+    .left {
+      width: 40%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        max-width: 512px;
+        margin-bottom: 48px;
+      }
+
+      img {
+        width: var(--full);
+      }
+    }
+
+    .right {
+      width: 48%;
+
+      @media (max-width: 1200px) {
+        width: var(--full);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .paraLead {
+        font-size: 15px;
+        color: var(--orange);
+        font-family: Noto-Medium;
+      }
+
+      h2 {
+        margin: 12px 0px 24px;
+        max-width: 574px;
+        font-size: 32px;
+        font-family: Noto-Bold;
+      }
+
+      > p:not(.paraLead) {
+        font-family: Noto-Light;
+        font-size: 17px;
+        max-width: 630px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

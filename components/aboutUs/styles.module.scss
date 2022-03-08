@@ -1,0 +1,467 @@
+.about {
+  width: var(--full);
+
+  .hero {
+    width: var(--full);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+        111.15deg,
+        rgba(93, 85, 255, 0.65) 0%,
+        rgba(255, 134, 98, 0.65) 100%
+      ),
+      url("/images/aboutHero.png");
+    background-size: cover;
+    padding: 224px 16px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 903px) {
+      padding: 96px 16px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 72px 16px;
+    }
+
+    h1 {
+      font-family: Noto-Bold;
+      font-size: 56px;
+      max-width: 849px;
+      text-align: center;
+      margin-bottom: 24px;
+      text-shadow: var(--text-shadow);
+      line-height: 66px;
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .firstContent {
+    width: var(--full);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -35%;
+      width: var(--full);
+      height: var(--full);
+      right: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url("../../public/images/tapeBg.PNG") no-repeat center;
+      background-size: 170%;
+      opacity: 0.75;
+      z-index: -1;
+      max-width: var(--wrapper-max-width);
+      min-width: var(--wrapper-min-width);
+    }
+
+    .firstWrapper {
+      width: 90%;
+      padding: 100px 0px 140px;
+      margin: 0 auto;
+
+      @media (max-width: 903px) {
+        padding: 32px 16px 72px;
+      }
+
+      @media (max-width: 600px) {
+        width: var(--full);
+      }
+
+      .vision {
+        margin: 0px auto;
+        display: flex;
+        width: var(--full);
+        max-width: 828px;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .visionCard {
+          width: 50%;
+          background: var(--primary);
+          padding: 64px 43px 64px 32px;
+          border-radius: 32px 0px 0px 32px;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background: var(--main-bg);
+            width: 24px;
+            height: 194px;
+            border-radius: 8px 0px 0px 8px;
+          }
+
+          @media (max-width: 600px) {
+            width: var(--full);
+            max-width: 350px;
+            border-radius: 8px 8px 0px 0px;
+            text-align: center;
+            padding: 48px 16px 56px;
+
+            &::after {
+              top: auto;
+              bottom: 0;
+              transform: translate(-50%, 0);
+              // right: 50%;
+              // left: 50%;
+              left: 50%;
+              right: auto;
+              height: 24px;
+              width: 194px;
+              border-radius: 8px 8px 0px 0px;
+            }
+          }
+
+          h2 {
+            font-size: 20px;
+            font-family: Noto-Bold;
+          }
+
+          p {
+            font-size: 14px;
+            max-width: 315px;
+            margin-top: 15px;
+          }
+        }
+
+        .missionCard {
+          width: 50%;
+          background: var(--orange);
+          padding: 64px 32px 64px 43px;
+          border-radius: 0px 32px 32px 0px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background: var(--main-bg);
+            width: 24px;
+            height: 194px;
+            border-radius: 0px 8px 8px 0px;
+          }
+
+          @media (max-width: 600px) {
+            width: var(--full);
+            max-width: 350px;
+            border-radius: 0px 0px 8px 8px;
+            text-align: center;
+            padding: 48px 16px;
+
+            &::before {
+              top: 0;
+              transform: translate(-50%, 0);
+              left: 50%;
+              right: auto;
+              height: 24px;
+              width: 194px;
+              border-radius: 0px 0px 8px 8px;
+            }
+          }
+
+          h2 {
+            font-size: 20px;
+            font-family: Noto-Bold;
+          }
+
+          p {
+            font-size: 14px;
+            max-width: 315px;
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .evolvement {
+        width: var(--full);
+        max-width: 828px;
+        margin: 96px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+          font-size: 40px;
+          font-family: Noto-Bold;
+          max-width: 650px;
+          text-align: center;
+          margin-bottom: 19px;
+
+          @media (max-width: 600px) {
+            font-size: 32px;
+          }
+        }
+
+        p {
+          font-size: 20px;
+          font-family: Noto-Light;
+          line-height: 30px;
+          max-width: 846px;
+
+          @media (max-width: 600px) {
+            font-size: 18px;
+          }
+        }
+
+        .yearlyGrowth {
+          margin: 64px auto 0px;
+          width: var(--full);
+          display: flex;
+
+          @media (max-width: 400px) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          > li {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33.3%;
+            // z-index: 12;
+
+            @media (max-width: 400px) {
+              width: var(--full);
+              margin-bottom: 32px;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+
+            &::after {
+              content: "";
+              width: 260px;
+              height: 1px;
+              position: absolute;
+              top: 66px;
+              right: -120px;
+              z-index: -1;
+              border: 1px dashed var(--primary);
+
+              @media (max-width: 861px) {
+                width: 240px;
+              }
+
+              @media (max-width: 727px) {
+                width: 200px;
+                right: -100px;
+              }
+
+              @media (max-width: 659px) {
+                width: 180px;
+                right: -100px;
+              }
+
+              @media (max-width: 590px) {
+                width: 180px;
+                right: -95px;
+              }
+
+              @media (max-width: 559px) {
+                width: 170px;
+                right: -85px;
+              }
+
+              @media (max-width: 493px) {
+                width: 135px;
+                right: -75px;
+              }
+
+              @media (max-width: 425px) {
+                width: 110px;
+                right: -50px;
+              }
+
+              @media (max-width: 400px) {
+                display: none;
+              }
+            }
+
+            &:last-of-type {
+              &::after {
+                display: none;
+              }
+
+              > span {
+                max-width: 191px;
+              }
+            }
+
+            h3 {
+              font-size: 28px;
+              color: var(--orange);
+              font-family: Noto-Bold;
+            }
+
+            .yearEllipse {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background: var(--secondary-dark);
+              margin: 12px 0px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                background: var(--text-primary);
+                border-radius: 50%;
+              }
+            }
+
+            > span {
+              font-size: 14px;
+              display: block;
+              max-width: 121px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .numbers {
+    width: var(--full);
+    background: var(--secondary-dark);
+
+    .numbersWrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 80px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 903px) {
+        padding: 72px 16px;
+      }
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      .numbersLeft {
+        width: 40%;
+
+        @media (max-width: 1200px) {
+          width: var(--full);
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 32px;
+        }
+
+        h2 {
+          font-size: 32px;
+          font-family: Noto-Bold;
+          margin-bottom: 24px;
+        }
+
+        p {
+          max-width: 521px;
+          font-family: Noto-Light;
+          font-size: 17px;
+        }
+      }
+
+      .numbersRight {
+        width: 50%;
+        display: flex;
+
+        @media (max-width: 1200px) {
+          width: var(--full);
+        }
+
+        @media (max-width: 903px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .numbersStats {
+          width: 33.3%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @media (max-width: 903px) {
+            width: var(--full);
+            margin-bottom: 32px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+          h3 {
+            font-size: 40px;
+            color: var(--orange);
+            font-family: Noto-Bold;
+            margin-bottom: 10px;
+            white-space: nowrap;
+
+            @media (max-width: 600px) {
+              font-size: 32px;
+              white-space: pre-line;
+            }
+          }
+
+          > span {
+            font-size: 17px;
+            font-family: Noto-Light;
+          }
+        }
+      }
+    }
+  }
+
+  .outro {
+    width: var(--full);
+    padding: 140px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 903px) {
+      padding: 72px 16px;
+    }
+
+    h2 {
+      font-family: Noto-Bold;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: Noto-Light;
+      margin: 24px 0px 40px;
+      max-width: 846px;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin font($font, $size) {
+  font: {
+    family: $font;
+    size: $size;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: 3em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .cancel {
+    cursor: pointer;
+    text-transform: uppercase;
+    @include font(Noto-SemiBold, 1em);
+    color: rgba(245, 245, 255, 1);
+    @media (max-width: 768px) {
+      margin-top: 1.5em;
+    }
+  }
+}

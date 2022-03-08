@@ -1,0 +1,98 @@
+@mixin font($font, $size) {
+  font: {
+    family: $font;
+    size: $size;
+  }
+}
+
+@mixin textColor($color) {
+  color: $color;
+}
+
+@mixin wrapperStyles {
+  background: var(--secondary-dark);
+  padding: 1.8em 1.5em;
+  margin: 2em 0;
+  border-radius: 8px;
+}
+
+.wrapper {
+  flex: 8;
+
+  .renewWrapper {
+    @include wrapperStyles;
+
+    .text1 {
+      @include font(Noto-Semibold, 1em);
+      @include textColor(rgba(245, 245, 255, 1));
+      margin-bottom: 0.7em;
+    }
+    .text2 {
+      @include font(Noto-Light, 0.9em);
+      @include textColor(rgba(244, 244, 244, 0.8));
+      margin-bottom: 25px;
+    }
+
+    .button {
+      button {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .changeWrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+    @include wrapperStyles;
+
+    .flex1 {
+      display: flex;
+      flex: 1;
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .marginRight {
+        margin-right: 5rem;
+        @media (max-width: 1200px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+
+      .nextBText {
+        @include font(Noto-Light, 0.82em);
+        @include textColor(rgba(255, 134, 98, 1));
+        margin-top: 10px;
+        @media (max-width: 1000px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .flex2 {
+      .taxRateText {
+        margin-top: 20px;
+        @include font(Noto-Light, 0.9em);
+        @include textColor(rgba(145, 145, 145, 1));
+      }
+    }
+
+    .headerText {
+      @include font(Noto-Bold, 1.1em);
+      @include textColor(rgba(245, 245, 255, 1));
+      margin-bottom: 10px;
+    }
+
+    .subText {
+      @include font(Noto-Light, 1.1em);
+      @include textColor(rgba(244, 244, 244, 0.8));
+    }
+  }
+}

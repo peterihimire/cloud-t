@@ -1,0 +1,59 @@
+.pricingCards {
+  width: 90%;
+  margin: 0 auto;
+
+  .pricingTabHeader {
+    margin-top: 54px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+
+    // > button {
+    //   background: transparent;
+    //   padding: 0;
+    //   position: relative;
+    //   font-family: Noto-Bold;
+    //   font-size: 17px;
+    //   display: flex;
+    //   margin-right: 56px;
+    //   width: fit-content;
+    //   text-align: left;
+
+    //   &:last-of-type {
+    //     margin-right: 0;
+    //   }
+
+    //   &.active {
+    //     &::after {
+    //       content: "";
+    //       width: 13px;
+    //       height: 13px;
+    //       background: var(--primary-shade);
+    //       margin-left: 10px;
+    //       flex-shrink: 0;
+    //       border-radius: 50%;
+    //     }
+    //   }
+    // }
+
+    .monthly,
+    .yearly {
+      font-family: Noto-Bold;
+      font-size: 17px;
+      display: flex;
+      width: fit-content;
+      text-align: left;
+      height: fit-content;
+      margin-bottom: 0;
+    }
+
+    .monthly {
+      margin-right: 56px;
+      cursor: pointer;
+
+      > span {
+        margin-right: 20px;
+      }
+    }
+  }
+}
